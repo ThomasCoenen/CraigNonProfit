@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    color: white;
+  }
+
+
+body {
+  display: grid;
+  /* overflow: hidden; */
+  /* margin: auto 0; */
+  /* display: grid; */
+
+    /* min-height: 100%; */
+    height: 100%;  
+  background: url(images/backgroundimg.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;  
+  /* width: 100%;
+  height: 100%;  */
+  /* height: 100vh;
+  width: 100vw; */
+
+  /* height: 100vh; 
+  width: 100%; */
+
+
+  /* Resize the background image to cover the entire container
+  background-repeat: no-repeat; 
+
+  /* width: 100%; */
+  /* font-family: Helvetica Arial, sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+} 
+
+
+@media only screen and (max-width: 500px) {
+  html {
+    /* min-height: 100%; */
+
+    background: url(images/backgroundimg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-attachment: scroll; */
+
+  }
+}
+
+
+/* #root {
+  height: 100%;
+} */
+
+
+/*grid container will take up all the viewport*/
+.container {    
+
+
+
+  /* margin: auto 0; */
+  /* background: url(images/backgroundimg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;   */
+
+  /* background-repeat: no-repeat;  */
+  /* font-size: 62.5%;  */
+  /* box-sizing: border-box; */
+  /* width: 100%;
+  height: 100%; */
+  /* height: 100%;  */
+
+
+
+
+/* height: 100vh;
+width: 100vw; */
+/*width: 100%;*/
+/* height: 100%;  */
+
+
+display: grid;
+  grid-template-columns: auto;
+grid-template-rows: auto;
+/* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ grid-template-columns: 1fr;*/
+  /*overflow: hidden;*/
+  /*font-size: 20px;*/
+  /*width: 100%;*/
+  /* justify-self: center; */
+
+  /* height: 100vh;
+  width: 100vw; */
+  width: 100%;
+  height: 100%; 
+}
+
+/*new stuff*/
+
+#myHeader {
+  display: grid;
+  /*grid-template-columns: auto auto;*/
+  /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   WORKED (these 2 lines)
+  grid-template-rows: auto; */
+
+  grid-template-columns: 0.7fr 2.5fr;
+    /* grid-template-columns: auto auto; */
+
+  grid-template-rows: auto;
+
+  /*grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));*/
+  justify-items: end; 
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  /* padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;  */
+  background-color: rgba(0, 0, 0, .55) ;
+  /* opacity: 0.8; */
+}
+
+.cureimg {
+  height: 62px;
+  max-width: 18rem;
+  min-width: 119px;
+  width: 65%;
+  display: grid;
+  /* justify-self: center; */
+  /* list-style-type: none; */
+  /* justify-self: start; */
+  /* align-self: start; */
+  /* padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px -42px; */
+  /* opacity: 1.3; */
+}
+
+.list {
+  list-style-type: none;
+
+  /* list-style: none; */
+  /* justify-self: start; */
+  /*align-self: end;*/
+  /* padding: 5px 0px 0px 40px;
+  margin: 0px 0px 0px 0px; */
+  /* width: 100%; */
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  /* justify-items: end; */
+  /* justify-self: end; */
+  /* padding: 10px 30px 0px 2px;
+  margin: 0px 0px 0px 10px; */
+  /* width: 10%; */
+  list-style-type: none;
+
+}
+
+.buttons li {
+  /* display: grid; */
+  /* grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto; */
+  /* text-decoration: none; */
+  /* justify-self: end; */
+  /* margin: 15px 18px 0px 0px; */
+  /* font-size: 20px; */
+  /* width: 100%; */
+
+}
+
+.try {
+  /* display: grid;  
+  justify-content: end; */
+  /* justify-items: end; */
+}
+
+.home {
+  display: grid;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0px 10px 0px 0px;
+  color: white;
+  margin: 0px 0px 0px 10px;
+}
+
+.content {
+  /* height: 100vh;
+  width: 100vw; */
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+    grid-gap: 16px;
+
+  /* grid-template-rows: auto auto auto auto; */
+/*hide any overflow to ensure that nothing leaks outside of the .content element that would disturb the parent’s layout.*/
+   
+  /* overflow: hidden; 
+   overflow-y: scroll; */
+
+
+   /* background-color: Lightgrey; */
+  /* font-size: 18px; */
+   /*margin: 0px;*/
+   /*margin: auto 0;*/
+   /*padding: 0px -10px 0px 0px;*/
+   /*padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;*/
+  /*float: left;*/
+  width: 100%;
+     /* width: 100vw; */
+     /* justify-content: center;
+     align-items: center; */
+     justify-items: center;
+     /* text-align: center; */
+
+}
+
+#welcome {
+  display: grid;
+  /* grid-template-columns: auto; */
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  grid-template-rows: auto auto;
+  /* justify-items: center; */
+  /* text-align: center; */
+  width: 100%;
+  font-size: 12px;
+  /* justify-items: center;
+  align-items: center; */
+  grid-gap: 7px;
+  padding: 10px 0px 5px 0px;
+  margin: 0px 0px 0px 0px; 
+}
+
+.saying {
+  /* display: grid;
+  justify-items: center;
+  align-items: center; */
+  width: 100%;
+  text-align: center;
+
+}
+
+#projects {
+  display: grid;
+  /* grid-template-columns: auto; */
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+  /* grid-template-rows: auto; */
+  justify-items: center;
+  /* align-items: center; */
+  /* background-color: red; */
+  width: 100%;
+}
+
+#mainbuttons {
+  /* font-size: 35px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-rows: auto auto;
+  width: 80%; */
+
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  /* padding: 0px 0px 12px 0px;
+  margin: 0px 0px 0px 0px; */
+  width: 90%;
+  /* font-size: 20px; */
+  /* justify-items: ; */
+  justify-content: center;
+  /* justify-items: start; */
+  /* justify-content: start; */
+  align-content: center;
+  /* align-items: center; */
+  /* align-items: center; */
+  padding: 0px 0px 14px 0px;
+}
+
+button {
+  border-radius: 7px;
+  /* color: blue; */
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  /* width: 80%; */
+}
+
+button:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} 
+
+
+.artbuttons {
+  /* width: 200px; */
+  height: 2rem;
+  /* width: 80%; */
+  font-size: 13px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+
+
+.project-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*grid-template-columns: auto;*/
+  /* grid-template-rows: 1fr;
+  grid-gap: 20px;
+  width: 80%;
+  background-color: rgb(203, 245, 66);  */
+
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-gap: 50px; */
+  /* padding: 0px 0px 0px 10px;
+  margin: 15px 0px 0px 0px; */
+    grid-row-gap: 16px;
+
+
+}
+
+.product{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  /* grid-gap: 16px; */
+  width: 100%;
+  /* grid-row-gap: 16px; */
+}
+
+.image_prod {
+  /* height: 250px; */
+  /* width: 265px; */
+  display: grid;
+  /* justify-content: center; */
+  justify-self: center;
+  /* align-self: center; */
+  min-width: 150px;
+  max-width: 500px;
+  min-height: 200px;
+  width: 90%;
+  /* height: 60%; */
+  margin: 5px 0px 0px 0px;
+  /* padding: 0px 0px 20px 0px; */
+}
+
+.itemstuff {
+  display: grid;
+
+  font-size: 1rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+
+  /* justify-items: center; */
+  /* align-items: center; */
+  /* justify-content: start; */
+  /* justify-items: start; */
+  /* text-align: center; */
+
+  /* align-content: center; */
+  /* padding: 0px 0px 0px 0px;
+  margin: -15px 90px 0px 0px; */
+  width: 100%;
+  /* font-size: 1rem; */
+}
+
+.itemname {
+  font-size: 0.75rem;
+}
+
+.description {
+  font-size: 0.75rem;
+  /* margin: -17px 0px 0px 0px; */
+}
+
+.donate {
+  height: 36px;
+  /* width: 200px; */
+  width: 80%;
+  font-size: 0.85rem;
+}
+
+
+/* .specific-project:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
+
+
+
+
+
+
+
+#contact {
+  /*text-align: center;*/
+  display: grid;
+  /* grid-template-columns: auto; */
+  grid-template-columns: repeat(auto-fit, minmax(1rem, auto));
+  /*grid-template-rows: auto auto auto;*/
+  grid-template-rows: auto;
+  justify-items: center;
+  /*align-items: center;*/
+  /*align-self: center;*/
+  width: 100%;
+  margin: 20px 0px 15px 0px; 
+  /* padding: 0px 0px 20px 0px; */
+}
+
+#connect-links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+  grid-template-rows: auto;
+  justify-items: center;
+  /*grid-gap: 170px;*/
+  list-style: none;
+  width: 100%;
+  /* color: white; */
+
+  /*margin: 0px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;*/
+}
+
+.connect {
+  color: white;
+
+}
+
+
+#connect-links li:hover {
+  transform: scale(1.15); 
+}
+
+footer {
+  display: grid;
+  justify-self: center;
+  width: 100%;
+  justify-items: center;
+  margin: 20px 0px 10px 0px;
+  /* padding: 0px 0px 20px 0px; */
+}
+
+/* .formbox {
+  display: grid;
+  align-items: start;
+
+} */
+
+
+.form {
+  display: grid;
+
+  /* align-items: start; */
+  justify-content: center;
+  margin: 0px 0px 75px 0px;
+}
+
+.singlebox {
+  display: grid;
+  /* align-items: center; */
+
+}
+
+.submitcontactbutton {
+  display: grid;
+  /* justify-content: center; */
+  /* width: 200px; */
+  height: 30px;
+  /* text-align: center; */
+}
