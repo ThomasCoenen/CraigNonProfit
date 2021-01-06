@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/CraigNonProfit/static/css/main.cb1b3581.chunk.css",
+    "main.js": "/CraigNonProfit/static/js/main.789e2233.chunk.js",
+    "main.js.map": "/CraigNonProfit/static/js/main.789e2233.chunk.js.map",
+    "runtime-main.js": "/CraigNonProfit/static/js/runtime-main.6897550e.js",
+    "runtime-main.js.map": "/CraigNonProfit/static/js/runtime-main.6897550e.js.map",
+    "static/js/2.89d82fc7.chunk.js": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js",
+    "static/js/2.89d82fc7.chunk.js.map": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js.map",
+    "static/js/3.bbb68ee8.chunk.js": "/CraigNonProfit/static/js/3.bbb68ee8.chunk.js",
+    "static/js/3.bbb68ee8.chunk.js.map": "/CraigNonProfit/static/js/3.bbb68ee8.chunk.js.map",
+    "index.html": "/CraigNonProfit/index.html",
+    "static/css/main.cb1b3581.chunk.css.map": "/CraigNonProfit/static/css/main.cb1b3581.chunk.css.map",
+    "static/js/2.89d82fc7.chunk.js.LICENSE.txt": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/CraigNonProfit/static/media/backgroundimg.9267f9c5.png",
+    "static/media/curebutton.aa89fe5a.png": "/CraigNonProfit/static/media/curebutton.aa89fe5a.png",
+    "static/media/productimg1.4d985f4a.jpg": "/CraigNonProfit/static/media/productimg1.4d985f4a.jpg",
+    "static/media/productimg2.34b68966.jpg": "/CraigNonProfit/static/media/productimg2.34b68966.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6897550e.js",
+    "static/js/2.89d82fc7.chunk.js",
+    "static/css/main.cb1b3581.chunk.css",
+    "static/js/main.789e2233.chunk.js"
+  ]
+}
