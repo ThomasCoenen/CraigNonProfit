@@ -5,7 +5,9 @@ import './App.css';
 
 export default function AboutPage() {
     return (
-        <div>
+        <div className="about" style={{ 
+            backgroundImage: `url("images/homebackground.JPG")` 
+          }}>
             <h1>About</h1>
             
         </div>

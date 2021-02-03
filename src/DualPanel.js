@@ -1,53 +1,53 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import StripeCheckout from "react-stripe-checkout"
 import { Link } from 'react-router-dom';
 import './App.css';
-import data from './data/framedprint.js'
+// import data from './data2.js'
+import data from './data/dualpanel.js'
 
-export default function FramedPrint(props) {
-  const {path, setPath} = props
-  let token;
-  let product;
+export default function DualPanel(props) {
+    const {path, setPath} = props
+    // const [path, setPath] = useState("/")
 
-  //token automatically created for u
-  const makePayment = (token, product) => {
-    const body = {
-      token,
-      product
+    let token;
+    let product;
+  
+    //token automatically created for u
+    const makePayment = (token, product) => {
+      const body = {
+        token,
+        product
+      }
+      const headers = {
+        "Content-Type": "application/json"
+      }
+      //fire up request to backend. can also use Axios to do this. 
+      //MAKE SURE IF HOSTING ON AN REAL SERVER USE HTTPS
+      return fetch(`http://localhost:3000/payment`, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body)
+      })
+      //success part
+      .then(response => { //lets see what the response looks like
+        console.log("RESPONSE: ", response)
+        const {status} = response; //destructure status from response
+        console.log("STATUS: ", status);
+      })
+      .catch(error => console.log(error));
     }
-    const headers = {
-      "Content-Type": "application/json"
-    }
-    //fire up request to backend. can also use Axios to do this. 
-    //MAKE SURE IF HOSTING ON AN REAL SERVER USE HTTPS
-    return fetch(`http://localhost:3000/payment`, {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(body)
-    })
-    //success part
-    .then(response => { //lets see what the response looks like
-      console.log("RESPONSE: ", response)
-      const {status} = response; //destructure status from response
-      console.log("STATUS: ", status);
-    })
-    .catch(error => console.log(error));
-  }
 
     return (
-      <body className={path === "/" ? "homepage" : "productpage"}>
-
-        {/* // <div className="content"> */}
-
+    <body className={path === "/" ? "homepage" : "productpage"}>
         <div className="projects">
-            <p className="saying" style={{ paddingBottom: "16px", fontWeight: "bold"}}>HIGH QUALITY FRAMED PRINT ART COMMENMORATIVES</p>
+            <p className="saying" style={{ paddingBottom: "16px", fontWeight: "bold"}}>HIGH QUALITY DUAL PANEL ART COMMENMORATIVES</p>
 
             <div className="mainbuttons">
-                <Link to="/dualpanel" className="artbuttons">
-                  <button className="artbuttons" onClick={() => setPath('dualpanel')}>DUAL PANEL OPTIONS</button>
-                </Link>
-                <Link to="/framedcanvas" className="artbuttons">
+                <Link to="/framedcanvas">
                   <button className="artbuttons" onClick={() => setPath('framedcanvas')}>FRAMED CANVAS OPTIONS</button>
+                </Link>
+                <Link to="/framedprint">
+                  <button className="artbuttons" onClick={() => setPath('framedprint')}>FRAMED PRINT OPTIONS</button>
                 </Link>
             </div>
             <br/>
@@ -90,9 +90,6 @@ export default function FramedPrint(props) {
             </div>
 
         </div>
-
-    {/* // </div> */}
     </body>
-
     )
 }

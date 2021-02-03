@@ -1,31 +1,10 @@
 import './App.css';
 import React, {useState} from 'react';
 import StripeCheckout from "react-stripe-checkout"
-// import curebuttonImg from './images/curebutton.png';
-// import productImg from './images/productimg1.png';
 import { Link} from 'react-router-dom';
 import data from './data.js'
-// import FramedPrint from './FramedPrint';
-// import AboutPage from './AboutPage';
-// import FramedCanvas from './FramedCanvas';
-
-
-
 
 export default function Homescreen() {
-
-// const [product, setProduct] = useState({
-//   name: "React from FB",
-//   price: 10, //10$
-//   productBy: "facebook",
-
-//   // _id: data.products[i]._id,
-//   // name: 'BRONZE LEVEL PARTNER FRAMED PRINT',
-//   // category: 'Shirts',
-//   // // image: productimg1,
-//   // price: 750,
-//   // description: 'high quality product'
-// });
 
 let token;
 let product;
@@ -59,9 +38,8 @@ const makePayment = (token, product) => {
 
 
     return (
-    
-    <div class="content">
-      {/* {alert(data.products[1].name)} */}
+    //!!!!!!
+    <div class="content"> 
         <section id="welcome">
           <h3 className="saying">HELP US HEAL AND CURE MORE CHILDREN EVERY DAY!</h3>
           <p className="saying">HIGH QULAITY DUAL PANEL FRAMED ART COMMENMORATIVES</p>
@@ -70,9 +48,6 @@ const makePayment = (token, product) => {
         <section id="projects">
 
           <div id="mainbuttons">
-              {/* <button className="artbuttons" href="">FRAMED CANVAS OPTIONS</button> */}
-              {/* <button className="artbuttons" href="">FRAMED PRINT OPTIONS</button> */}
-
               <Link to="/framedcanvas">
                 <button className="artbuttons">FRAMED CANVAS OPTIONS</button>
               </Link>
@@ -85,7 +60,6 @@ const makePayment = (token, product) => {
 
           <div class="project-grid">
                     
-            {/* <div className="product"> */}
                 {
                   data.products.map((product, i) => (
                     <>
@@ -96,7 +70,6 @@ const makePayment = (token, product) => {
                             <p className="description">Features:<br/>Beautiful Champagne Siler Finish<br/>Triple Matted w/ Float Spacer<br/>Tru Vue Glass<br/>High Quality engraved CURE Gold Partner<br/>Commenmorative plate<br/>Great Silent CURE Witness<br/><br/>"REDEEMED"<br/>CURE Commenmorative (White Version)<br/>20"x32" Outside Dimension<br/>With ${product.price} Donation</p>
                             <StripeCheckout
                               stripeKey={process.env.REACT_APP_KEY}
-                              // token={makePayment}
                               token={makePayment(token, product)}
                               name="Click to Donate"
                               amount={product.price * 100}
@@ -112,8 +85,6 @@ const makePayment = (token, product) => {
                   ))
                 }
                 
-              {/* </div> */}
-
           </div>
 
         </section>
