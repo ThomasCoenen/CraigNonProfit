@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/CraigNonProfit/static/css/main.cb1b3581.chunk.css",
-    "main.js": "/CraigNonProfit/static/js/main.789e2233.chunk.js",
-    "main.js.map": "/CraigNonProfit/static/js/main.789e2233.chunk.js.map",
-    "runtime-main.js": "/CraigNonProfit/static/js/runtime-main.6897550e.js",
-    "runtime-main.js.map": "/CraigNonProfit/static/js/runtime-main.6897550e.js.map",
-    "static/js/2.89d82fc7.chunk.js": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js",
-    "static/js/2.89d82fc7.chunk.js.map": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js.map",
-    "static/js/3.bbb68ee8.chunk.js": "/CraigNonProfit/static/js/3.bbb68ee8.chunk.js",
-    "static/js/3.bbb68ee8.chunk.js.map": "/CraigNonProfit/static/js/3.bbb68ee8.chunk.js.map",
+    "main.css": "/CraigNonProfit/static/css/main.5c8f846f.chunk.css",
+    "main.js": "/CraigNonProfit/static/js/main.e40b1630.chunk.js",
+    "main.js.map": "/CraigNonProfit/static/js/main.e40b1630.chunk.js.map",
+    "runtime-main.js": "/CraigNonProfit/static/js/runtime-main.f93bba2e.js",
+    "runtime-main.js.map": "/CraigNonProfit/static/js/runtime-main.f93bba2e.js.map",
+    "static/js/2.f50d1b20.chunk.js": "/CraigNonProfit/static/js/2.f50d1b20.chunk.js",
+    "static/js/2.f50d1b20.chunk.js.map": "/CraigNonProfit/static/js/2.f50d1b20.chunk.js.map",
+    "static/js/3.28a6cab6.chunk.js": "/CraigNonProfit/static/js/3.28a6cab6.chunk.js",
+    "static/js/3.28a6cab6.chunk.js.map": "/CraigNonProfit/static/js/3.28a6cab6.chunk.js.map",
     "index.html": "/CraigNonProfit/index.html",
-    "static/css/main.cb1b3581.chunk.css.map": "/CraigNonProfit/static/css/main.cb1b3581.chunk.css.map",
-    "static/js/2.89d82fc7.chunk.js.LICENSE.txt": "/CraigNonProfit/static/js/2.89d82fc7.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/CraigNonProfit/static/media/backgroundimg.9267f9c5.png",
+    "static/css/main.5c8f846f.chunk.css.map": "/CraigNonProfit/static/css/main.5c8f846f.chunk.css.map",
+    "static/js/2.f50d1b20.chunk.js.LICENSE.txt": "/CraigNonProfit/static/js/2.f50d1b20.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/CraigNonProfit/static/media/homebackground.e7d5cb78.JPG",
     "static/media/curebutton.aa89fe5a.png": "/CraigNonProfit/static/media/curebutton.aa89fe5a.png",
+    "static/media/home.3b8f831f.png": "/CraigNonProfit/static/media/home.3b8f831f.png",
     "static/media/productimg1.4d985f4a.jpg": "/CraigNonProfit/static/media/productimg1.4d985f4a.jpg",
     "static/media/productimg2.34b68966.jpg": "/CraigNonProfit/static/media/productimg2.34b68966.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6897550e.js",
-    "static/js/2.89d82fc7.chunk.js",
-    "static/css/main.cb1b3581.chunk.css",
-    "static/js/main.789e2233.chunk.js"
+    "static/js/runtime-main.f93bba2e.js",
+    "static/js/2.f50d1b20.chunk.js",
+    "static/css/main.5c8f846f.chunk.css",
+    "static/js/main.e40b1630.chunk.js"
   ]
 }
